@@ -1,5 +1,10 @@
 # Django #
-*.txt
+secret_key.txt
+scraper_app/static/images/about.txt
+static/admin/img/README.txt
+static/admin/js/vendor/jquery/LICENSE.txt
+static/admin/js/vendor/xregexp/LICENSE.txt
+static/images/about.txt
 *.log
 *.pot
 *.pyc
