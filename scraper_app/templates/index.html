@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block start %}
+    <div class = "form-div">
+        <form action={% url 'get_data' %} method="post" enctype="multipart/form-data">
+            {% csrf_token %}  
+            <div class = "container">
+                <label for="ylinks">Paste YouTube Links seperated by comma</label><br>
+                <input type="text" id="ylink" name="ylink" autocomplete="off" required><br>
+                <button type="submit">Scrap</button>
+                <p class="note">The scrapped data file will start downloading automatically.</p>
+            </div>
+        </form>
+    </div>
+{% endblock %}
